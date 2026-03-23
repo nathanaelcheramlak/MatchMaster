@@ -25,6 +25,33 @@ To start playing Match Master, follow these steps:
 3. **Load Images:** Select the "Change Image Dir" option from the File menu to load your own images.
 4. **Start Matching:** Flip cards to find and match pairs. Your score and remaining moves are displayed on the side.
 
+## How to Run
+
+1. Make sure Java is installed:
+
+   ```bash
+   java -version
+   javac -version
+   ```
+
+2. Compile the project from the repository root:
+
+   ```bash
+   javac *.java
+   ```
+
+3. Start the game:
+
+   ```bash
+   java Runner
+   ```
+
+Notes:
+
+- Run the commands from the project root so the game can load files from `assets/` and `highscore/`.
+- The default image set is loaded from `assets/Gumball/`.
+- If you want to use your own images, open `File` -> `Change Image Dir` after the app starts.
+
 ## Controls
 
 - **Restart Game:** Click the "Restart" option in the Game menu to start a new game.
