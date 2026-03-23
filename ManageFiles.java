@@ -29,7 +29,7 @@ public class ManageFiles {
 
         for (File f : imagePath) {
             if (imgPath.size() < (gridSize / 2)) {
-                String path = imageDirectory + "\\" + f.getName();
+                String path = new File(imageDirectory, f.getName()).getPath();
                 if (path.endsWith(".jpeg") || path.endsWith(".jpg") || path.endsWith(".png"))
                     imgPath.add(path);
             } else {

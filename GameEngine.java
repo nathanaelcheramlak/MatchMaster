@@ -65,7 +65,7 @@ public class GameEngine {
             timer = new Timer(timerDuration, new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    ImageIcon coverImg = new ImageIcon("assets\\LuckyLeaf.jpg");
+                    ImageIcon coverImg = new ImageIcon("assets/LuckyLeaf.jpg");
                     gameGui.getCards().get(firstCardIndex).setIcon(coverImg);
                     gameGui.getCards().get(secondCardIndex).setIcon(coverImg);
 

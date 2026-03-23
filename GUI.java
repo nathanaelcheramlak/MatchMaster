@@ -44,7 +44,7 @@ public class GUI extends JFrame implements ActionListener {
     private ArrayList<String> imageName = new ArrayList<>();
 
     // Default Image Path
-    private String imgPath = "assets\\Gumball";
+    private String imgPath = "assets/Gumball";
 
     // Reference Classes
     GameEngine engine;
@@ -60,7 +60,7 @@ public class GUI extends JFrame implements ActionListener {
         mainFrame = new JFrame();
 
         // Setting the App Logo
-        ImageIcon icon = new ImageIcon("assets\\logo.png");
+        ImageIcon icon = new ImageIcon("assets/logo.png");
         mainFrame.setIconImage(icon.getImage());
 
         mainFrame.setTitle("Match Master");
@@ -200,7 +200,7 @@ public class GUI extends JFrame implements ActionListener {
 
         for (int i = 0; i < totalCards; i++) {
             JButton card = new JButton();
-            ImageIcon img = new ImageIcon("assets\\LuckyLeaf.jpg");
+            ImageIcon img = new ImageIcon("assets/LuckyLeaf.jpg");
             card.setIcon(img);
             card.setFocusable(false);
             card.addActionListener(this);
@@ -301,7 +301,7 @@ public class GUI extends JFrame implements ActionListener {
                 if (fileName.endsWith(".jpg") || fileName.endsWith(".jpeg") || fileName.endsWith(".png") || fileName.endsWith(".gif")) {
                     imageCount++;
                 }
-                String image = directory + "\\" + f.getName();
+                String image = new File(directory, f.getName()).getPath();
                 imagePath.add(image);
             }
 
